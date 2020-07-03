@@ -1,5 +1,12 @@
-//should include 2 routes
 
-//a GET route to /survey to display the survey page
+var path = require("path");
 
-//default catch-all route that leads to home.html and displays the home
+module.exports = function(app){
+    app.get("/",function(req,res){
+        res.sendFile(path.join(__dirname, "/../public/home.html"));
+    });
+
+    app.get("/survey", function(req,res){
+        res.sendFile(path.join(__dirname, "/../public/survey.html"));
+    });
+};

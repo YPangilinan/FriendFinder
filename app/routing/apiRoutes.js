@@ -2,7 +2,16 @@
 //a GET route with the URL /api/friends. display a JSON of all possible friends
 //POST route /api/friends. use to handle incoming survey results and handle compatibility logic
 
+var path = require("path");
 
+var friendsData = require("../data/friends");
+
+module.exports = function(app){
+    app.get("/api/friends", function(req,res){
+        res.json(friendsData);
+    });
+
+    app.post("/api/friends",function(req,res){
 //compatibility logic
 // Convert each user's results into a simple array of numbers (ex: [5, 1, 4, 4, 5, 1, 2, 5, 4, 1]).
 // With that done, compare the difference between current user's scores against those from other users, question by question. Add up the differences to calculate the totalDifference.
@@ -21,3 +30,7 @@
 // Once you've found the current user's most compatible friend, display the result as a modal pop-up.
 
 // The modal should display both the name and picture of the closest match.
+    })
+}
+
+
