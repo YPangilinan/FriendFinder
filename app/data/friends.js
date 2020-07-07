@@ -4,27 +4,27 @@ var friends = [
     "photo":"https://babylonbee.com/img/articles/article-3561-1.jpg",
     "scores":[
         5,
+        2,
         1,
-        4,
-        4,
-        5,
+        3,
+        1,
         1,
         2,
-        5,
-        4,
-        1
+        2,
+        1,
+        3
       ]
   },
   {
     "name":"Dwight Schrute",
     "photo":"https://img1.looper.com/img/gallery/the-untold-truth-of-dwight-schrute/intro-1562620300.jpg",
     "scores":[
+        4,
+        2,
         5,
         1,
-        4,
-        4,
-        5,
-        1,
+        2,
+        2,
         2,
         5,
         4,
@@ -35,15 +35,15 @@ var friends = [
     "name":"Jim Halpert",
     "photo":"https://assets.rebelmouse.io/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHBpcmVzX2F0IjoxNTk0MTExMjUwLCJpbWFnZSI6Imh0dHBzOi8vbWVkaWEucmJsLm1zL2ltYWdlP3U9JTJGZmlsZXMlMkYyMDE2JTJGMDMlMkYwNCUyRjYzNTkyNzIyMzE4ODMwMTUzNC02MjI5MzA3OTlfSklNLnBuZyZobz1odHRwcyUzQSUyRiUyRmF6NjE2NTc4LnZvLm1zZWNuZC5uZXQmcz02OTUmaD0yMWM4Yjc0MTJlMmJjMjk0MDlhMTllNTk5OTE4OGY2YzI4MjRmMzAzZWFkZmZjMTFiZTM5Yzk1MjcwMTBiNmFkJnNpemU9OTgweCZjPTEzMDMwNjM1MjUifQ.mLyjJtP53EQv5WH5mrCdIxwS3ob1uq6Aa9InkJZ-s5w/img.jpg",
     "scores":[
+        2,
+        3,
+        2,
+        4,
         5,
         1,
-        4,
-        4,
-        5,
-        1,
+        3,
         2,
         5,
-        4,
         1
       ]
   },
@@ -51,47 +51,47 @@ var friends = [
     "name":"Tom Haverford",
     "photo":"https://www.incimages.com/uploaded_files/image/1920x1080/getty_463381742_2000133020009280116_75578.jpg",
     "scores":[
-        3,
-        5,
-        4,
-        4,
-        5,
-        1,
         2,
         5,
+        1,
+        5,
         4,
-        1
+        2,
+        1,
+        1,
+        4,
+        3
       ]
   },
   {
     "name":"David Rose",
     "photo":"https://vignette.wikia.nocookie.net/schitts-creek/images/6/6e/S5david.png/revision/latest?cb=20191121205906",
     "scores":[
-        5,
-        1,
-        4,
-        4,
-        5,
-        1,
         2,
         5,
-        4,
-        1
+        1,
+        5,
+        2,
+        1,
+        5,
+        1,
+        1,
+        2
       ]
   },
   {
     "name":"Alexis Rose",
     "photo":"https://vignette.wikia.nocookie.net/schitts-creek/images/d/d3/S5alexis.png/revision/latest?cb=20191121205923",
     "scores":[
+        1,
         5,
         1,
-        4,
-        4,
         5,
-        1,
         2,
         5,
-        4,
+        3,
+        1,
+        1,
         1
       ]
   },
@@ -99,12 +99,12 @@ var friends = [
     "name":"Michael Scott",
     "photo":"https://www.business.com/images/content/5ca/3d4125a215e8a458b7996/1500-0-",
     "scores":[
-        5,
-        1,
+        2,
+        3,
         4,
-        4,
-        5,
         1,
+        2,
+        3,
         2,
         5,
         4,
@@ -115,15 +115,15 @@ var friends = [
     "name":"Beyonce",
     "photo":"https://www.kolpaper.com/wp-content/uploads/2020/03/beyonce-wallpaper-hd.jpg",
     "scores":[
+        1,
         5,
         1,
-        4,
-        4,
         5,
+        3,
+        3,
         1,
-        2,
-        5,
-        4,
+        1,
+        1,
         1
       ]
   },
@@ -131,32 +131,32 @@ var friends = [
     "name":"Andy Dwyer",
     "photo":"https://cdn3.whatculture.com/images/2020/04/e5368098dc93c0c4-1200x675.jpg",
     "scores":[
-        5,
-        1,
+        3,
+        3,
+        2,
+        3,
         4,
-        4,
-        5,
         1,
         2,
-        5,
+        2,
         4,
-        1
+        5
       ]
   },
   {
     "name":"Rihanna",
     "photo":"https://images5.alphacoders.com/964/964081.jpg",
     "scores":[
-        5,
         1,
         4,
+        1,
         4,
         5,
+        2,
         1,
         2,
-        5,
-        4,
-        1
+        1,
+        3
       ]
   }
 ];
