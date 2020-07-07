@@ -1,6 +1,7 @@
 //app data array of objects for friends
 
-var friends = [{
+var friends = [
+    {
     "name":"Ron Swanson",
     "photo":"https://babylonbee.com/img/articles/article-3561-1.jpg",
     "scores":[
@@ -160,4 +161,6 @@ var friends = [{
         1
       ]
   }
-]
+];
+
+module.exports = friends;

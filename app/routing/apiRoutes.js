@@ -12,25 +12,33 @@ module.exports = function(app){
     });
 
     app.post("/api/friends",function(req,res){
-//compatibility logic
-// Convert each user's results into a simple array of numbers (ex: [5, 1, 4, 4, 5, 1, 2, 5, 4, 1]).
-// With that done, compare the difference between current user's scores against those from other users, question by question. Add up the differences to calculate the totalDifference.
+        var user = req.body;
 
-// Example:
+        for(var i=0; i<user.scores.length; i++){
+            user.scores[i] = parseInt(user.scores[i]);
+        }
 
-// User 1: [5, 1, 4, 4, 5, 1, 2, 5, 4, 1]
+        var matchIndex = 0;
+        var minMatch = 40;
 
-// User 2: [3, 2, 6, 4, 5, 1, 2, 5, 4, 1]
+        for(var i=0; i<friends.length; i++){
+            var totalDifference =0;
+            for(var j=0; j<friends[i].scores.length; j++){
+                var diff = Math.abs(user.scores[j] - friends[i].scores[j]);
+                totalDifference += diff;
+            }
 
-// Total Difference: 2 + 1 + 2 = 5
+            if(totalDifference < minMatch){
+                matchIndex = i;
+                minMatch = totalDifference;
+            }
+        }
 
-// Remember to use the absolute value of the differences. Put another way: no negative solutions! Your app should calculate both 5-3 and 3-5 as 2, and so on.
-// The closest match will be the user with the least amount of difference.
+        friends.push(user);
 
-// Once you've found the current user's most compatible friend, display the result as a modal pop-up.
+        res.json(friends[matchIndex]);
 
-// The modal should display both the name and picture of the closest match.
-    })
-}
+    });
+};
 
 
