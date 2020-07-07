@@ -9,8 +9,29 @@
     <link rel="stylesheet" type = "text/css" href = "../css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 </head>
+
 <body>
-   <div class="container">
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i> FriendFinder</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/api/friends" target = "_blank">API Friends List <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/YPangilinan/FriendFinder" target = "_blank">GitHub Repo</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        Connecting you with the people around you
+      </span>
+    </div>
+  </nav>
+<div class="container mt-4">
        <div class="jumbotron">
            <h1>Take Our Compatibility Survey</h1>
            <p>Rate each question from 1 to 5 and we will find your perfect friend match for you!</p>
@@ -29,10 +50,15 @@
            </div>
        </div>
        <div class="row">
-           <div class="col-lg-6">
+           <div class="col-lg-6 d-flex justify-content-center">
             <form>
                 <div class="form-group">
-                 <label for="surveyQuestion"><h5>Question 1:</h5>You prefer a plain hamburger (just meat and cheese) over a fancy one.</label>
+                 <label for="surveyQuestion">
+                   <div class="card text-center" style="width: 24rem; height: 8rem;">
+                  <div class="card-body">
+                    You prefer a plain hamburger (just meat and cheese) over a fancy one.</label>
+                  </div>
+                </div>
                  <select class="form-control" id="question1">
                      <option value="" disabled selected>Choose your option</option>
                      <option value="1">1 (Strongly Disagree)</option>
@@ -44,7 +70,12 @@
                </div>
          
                <div class="form-group">
-                 <label for="surveyQuestion"><h5>Question 2:</h5>You believe that you need to treat yo' self every so often!</label>
+                 <label for="surveyQuestion">
+                  <div class="card text-center" style="width: 24rem; height: 8rem;">
+                    <div class="card-body">
+                  You believe that you need to treat yo' self every so often!</label>
+                    </div>
+                  </div>
                  <select class="form-control" id="question2">
                      <option value="" disabled selected>Choose your option</option>
                      <option value="1">1 (Strongly Disagree)</option>
@@ -56,7 +87,12 @@
                </div>
          
                <div class="form-group">
-                 <label for="surveyQuestion"><h5>Question 3:</h5>You like Bears, Beets, and Battlestar Galactica.</label>
+                 <label for="surveyQuestion">
+                  <div class="card text-center" style="width: 24rem; height: 8rem;">
+                    <div class="card-body">
+                   You like Bears, Beets, and Battlestar Galactica.</label>
+                    </div>
+                  </div>
                  <select class="form-control" id="question3">
                    <option value="" disabled selected>Choose your option</option>
                    <option value="1">1 (Strongly Disagree)</option>
@@ -68,7 +104,12 @@
                </div>
          
                <div class="form-group">
-                 <label for="surveyQuestion"><h5>Question 4:</h5>You wake up, flawless. Post up, flawless.</label>
+                 <label for="surveyQuestion">
+                  <div class="card text-center" style="width: 24rem; height: 8rem;">
+                    <div class="card-body">
+                      You wake up, flawless. Post up, flawless.</label>
+                    </div>
+                  </div>
                  <select class="form-control" id="question4">
                    <option value="" disabled selected>Choose your option</option>
                    <option value="1">1 (Strongly Disagree)</option>
@@ -80,7 +121,12 @@
                </div>
          
                <div class="form-group">
-                 <label for="surveyQuestion"><h5>Question 5:</h5>When its raining, you allow someone to stand under your umbrella, ella.</label>
+                 <label for="surveyQuestion">
+                  <div class="card text-center" style="width: 24rem; height: 8rem;">
+                    <div class="card-body">
+                   When its raining, you allow someone to stand under your umbrella, ella.</label>
+                    </div>
+                  </div>
                  <select class="form-control" id="question5">
                      <option value="" disabled selected>Choose your option</option>
                      <option value="1">1 (Strongly Disagree)</option>
@@ -92,11 +138,16 @@
                </div>
             </form>
               </div>
-         <div class="col-lg-6">
 
+         <div class="col-lg-6 d-flex justify-content-center">
          <form>
                <div class="form-group">
-                 <label for="surveyQuestion"><h5>Question 6:</h5>You make sure to grab a post-workout smoothie after a run.</label>
+                 <label for="surveyQuestion">
+                  <div class="card text-center" style="width: 24rem; height: 8rem;">
+                    <div class="card-body">
+                  You make sure to grab a post-workout smoothie after a run.</label>
+                    </div>
+                  </div>
                  <select class="form-control" id="question6">
                      <option value="" disabled selected>Choose your option</option>
                      <option value="1">1 (Strongly Disagree)</option>
@@ -108,7 +159,12 @@
                </div>
          
                <div class="form-group">
-                 <label for="surveyQuestion"><h5>Question 7:</h5>When you make Macaroni & Cheese, you like to fold in the cheese.</label>
+                 <label for="surveyQuestion">
+                  <div class="card text-center" style="width: 24rem; height: 8rem;">
+                    <div class="card-body">
+                   When you make Macaroni & Cheese, you like to fold in the cheese.</label>
+                    </div>
+                  </div>
                  <select class="form-control" id="question7">
                      <option value="" disabled selected>Choose your option</option>
                      <option value="1">1 (Strongly Disagree)</option>
@@ -120,7 +176,12 @@
                </div>
          
                <div class="form-group">
-                 <label for="surveyQuestion"><h5>Question 8:</h5>Sbarros' is real Italian food.</label>
+                 <label for="surveyQuestion">
+                  <div class="card text-center" style="width: 24rem; height: 8rem;">
+                    <div class="card-body">
+                   Sbarros' is real Italian food.</label>
+                    </div>
+                  </div>
                  <select class="form-control" id="question8">
                      <option value="" disabled selected>Choose your option</option>
                      <option value="1">1 (Strongly Disagree)</option>
@@ -132,7 +193,12 @@
                </div>
          
                <div class="form-group">
-                 <label for="surveyQuestion"><h5>Question 9:</h5>You spend your work day pranking your co-workers.</label>
+                 <label for="surveyQuestion">
+                  <div class="card text-center" style="width: 24rem; height: 8rem;">
+                    <div class="card-body">
+                   You spend your work day pranking your co-workers.</label>
+                    </div>
+                  </div>
                  <select class="form-control" id="question9">
                      <option value="" disabled selected>Choose your option</option>
                      <option value="1">1 (Strongly Disagree)</option>
@@ -144,7 +210,12 @@
                </div>
          
                <div class="form-group">
-                 <label for="surveyQuestion"><h5>Question 10:</h5>You believe in helping the youth through music and karate.</label>
+                 <label for="surveyQuestion">
+                  <div class="card text-center" style="width: 24rem; height: 8rem;">
+                    <div class="card-body">
+                   You believe in helping the youth through music and karate.</label>
+                    </div>
+                  </div>
                  <select class="form-control" id="question10">
                      <option value="" disabled selected>Choose your option</option>
                      <option value="1">1 (Strongly Disagree)</option>
