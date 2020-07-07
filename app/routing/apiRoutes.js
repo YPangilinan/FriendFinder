@@ -21,10 +21,10 @@ module.exports = function(app){
         var matchIndex = 0;
         var minMatch = 40;
 
-        for(var i=0; i<friends.length; i++){
+        for(var i=0; i<friendsData.length; i++){
             var totalDifference =0;
-            for(var j=0; j<friends[i].scores.length; j++){
-                var diff = Math.abs(user.scores[j] - friends[i].scores[j]);
+            for(var j=0; j<friendsData[i].scores.length; j++){
+                var diff = Math.abs(user.scores[j] - friendsData[i].scores[j]);
                 totalDifference += diff;
             }
 
@@ -34,9 +34,9 @@ module.exports = function(app){
             }
         }
 
-        friends.push(user);
+        friendsData.push(user);
 
-        res.json(friends[matchIndex]);
+        res.json(friendsData[matchIndex]);
 
     });
 };

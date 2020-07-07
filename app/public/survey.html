@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FriendFinder Survey</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
    <div class="container">
@@ -56,7 +56,7 @@
                <div class="form-group">
                  <label for="surveyQuestion"><h5>Question 3:</h5>You like Bears, Beets, and Battlestar Galactica.</label>
                  <select class="form-control" id="question3">
-                   <option>1<option value="" disabled selected>Choose your option</option>
+                   <option value="" disabled selected>Choose your option</option>
                    <option value="1">1 (Strongly Disagree)</option>
                    <option value="2">2</option>
                    <option value="3">3</option>
@@ -158,7 +158,6 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <button type = "button" class = "close" data-dismiss = "modal">&times;</button>
             <h3 class = "modal-title">Your Perfect Match!</h3>
           </div>
           <div class="modal-body">
@@ -178,7 +177,7 @@
 
    </div>
 
-  <script type = "text/javascript">
+  <script>
 
     $("#submitButton").on("click", function(event){
       event.preventDefault();
@@ -186,9 +185,9 @@
       //validate the form
       var valid = true;
   
-      if($("#name".val() === "" || $("#photo").val === "")){
+      if($("#name").val() === "" || $("#photo").val === ""){
         valid = false;
-      }else if($("#question1").val() === "empty" || $("#question2").val() === "empty" || $("#question3").val() === "empty" || $("#question4").val() === "empty" || $("#question5").val() === "empty" || $("#question6").val() === "empty" || $("#question7").val() === "empty" || $("#question8").val() === "empty" || $("#question9").val() === "empty" || $("#question10").val() === "empty") {
+      } else if($("#question1").val() === "empty" || $("#question2").val() === "empty" || $("#question3").val() === "empty" || $("#question4").val() === "empty" || $("#question5").val() === "empty" || $("#question6").val() === "empty" || $("#question7").val() === "empty" || $("#question8").val() === "empty" || $("#question9").val() === "empty" || $("#question10").val() === "empty") {
         valid = false;
       }
   
@@ -216,17 +215,16 @@
         $.post(currentURL + "/api/friends", newMember, function(data){
           $("#perfectMatch").text(data.name);
           $("#matchPhoto").attr("src", data.photo);
+          $("#matchPhoto").css("width", "400px");
           $("#matchModal").modal("toggle");
         });
       } else{
         alert("You must fill out all questions in order to find your perfect match!")
-      }
-  
+      };
     });
   
   </script>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>   
 </body>
