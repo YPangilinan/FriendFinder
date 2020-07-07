@@ -51,8 +51,8 @@ var friends = [
     "name":"Tom Haverford",
     "photo":"https://www.incimages.com/uploaded_files/image/1920x1080/getty_463381742_2000133020009280116_75578.jpg",
     "scores":[
+        3,
         5,
-        1,
         4,
         4,
         5,

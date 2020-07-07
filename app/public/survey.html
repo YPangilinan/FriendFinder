@@ -6,6 +6,7 @@
     <title>FriendFinder Survey</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 </head>
 <body>
    <div class="container">
@@ -22,7 +23,7 @@
              <input type="text" id = "name" class="form-control mb-2" placeholder="Username">
           
            <h4>Link to Photo Image (Required)</h4>
-            <input type="text" id = "photo"class="form-control">
+            <input type="text" id = "photo"class="form-control mb-2">
            <hr>
            </div>
        </div>
@@ -66,7 +67,7 @@
                </div>
          
                <div class="form-group">
-                 <label for="surveyQuestion"><h5>Question 4:</h5>You wake up flawless.</label>
+                 <label for="surveyQuestion"><h5>Question 4:</h5>You wake up, flawless. Post up, flawless.</label>
                  <select class="form-control" id="question4">
                    <option value="" disabled selected>Choose your option</option>
                    <option value="1">1 (Strongly Disagree)</option>
@@ -78,7 +79,7 @@
                </div>
          
                <div class="form-group">
-                 <label for="surveyQuestion"><h5>Question 5:</h5>Example select</label>
+                 <label for="surveyQuestion"><h5>Question 5:</h5>When its raining, you allow someone to stand under your umbrella, ella, ella.</label>
                  <select class="form-control" id="question5">
                      <option value="" disabled selected>Choose your option</option>
                      <option value="1">1 (Strongly Disagree)</option>
@@ -90,7 +91,7 @@
                </div>
          
                <div class="form-group">
-                 <label for="surveyQuestion"><h5>Question 6:</h5>Example select</label>
+                 <label for="surveyQuestion"><h5>Question 6:</h5>You make sure to grab a post-workout smoothie after a run from the local cafe.</label>
                  <select class="form-control" id="question6">
                      <option value="" disabled selected>Choose your option</option>
                      <option value="1">1 (Strongly Disagree)</option>
@@ -102,7 +103,7 @@
                </div>
          
                <div class="form-group">
-                 <label for="surveyQuestion"><h5>Question 7:</h5>Example select</label>
+                 <label for="surveyQuestion"><h5>Question 7:</h5>When you make Macaroni & Cheese, you like to fold in the cheese.</label>
                  <select class="form-control" id="question7">
                      <option value="" disabled selected>Choose your option</option>
                      <option value="1">1 (Strongly Disagree)</option>
@@ -114,7 +115,7 @@
                </div>
          
                <div class="form-group">
-                 <label for="surveyQuestion"><h5>Question 8:</h5>Example select</label>
+                 <label for="surveyQuestion"><h5>Question 8:</h5>Sbarros' is real Italian food.</label>
                  <select class="form-control" id="question8">
                      <option value="" disabled selected>Choose your option</option>
                      <option value="1">1 (Strongly Disagree)</option>
@@ -126,7 +127,7 @@
                </div>
          
                <div class="form-group">
-                 <label for="surveyQuestion"><h5>Question 9:</h5>Example select</label>
+                 <label for="surveyQuestion"><h5>Question 9:</h5>You spend your work day pranking your co-workers.</label>
                  <select class="form-control" id="question9">
                      <option value="" disabled selected>Choose your option</option>
                      <option value="1">1 (Strongly Disagree)</option>
@@ -138,7 +139,7 @@
                </div>
          
                <div class="form-group">
-                 <label for="surveyQuestion"><h5>Question 10:</h5>Example select</label>
+                 <label for="surveyQuestion"><h5>Question 10:</h5>You believe in helping the youth through music and karate.</label>
                  <select class="form-control" id="question10">
                      <option value="" disabled selected>Choose your option</option>
                      <option value="1">1 (Strongly Disagree)</option>
@@ -152,7 +153,7 @@
            </div>
        </div>
        <br>
-        <button id = "submitButton" type="submit" class="btn btn-primary">Submit</button>
+        <button id = "submitButton" type="submit" class="btn btn-primary btn-lg btn-block"><i class="fa fa-check-circle-o" aria-hidden="true"></i> Submit</button>
    
     <div id = "matchModal" class = "modal fade" role = "dialog">
       <div class="modal-dialog">
