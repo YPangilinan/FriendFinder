@@ -1,5 +1,3 @@
-//app data array of objects for friends
-
 var friends = [
     {
     "name":"Ron Swanson",
