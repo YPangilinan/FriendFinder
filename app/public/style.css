@@ -1,3 +1,7 @@
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
 .navbar{
     position: absolute;
     background-color: transparent;
@@ -6,6 +10,8 @@
 
 .card-body{
     font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+
 }
 
 .hero {
